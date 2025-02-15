@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-wrapper">
+      <div class="profile-card-new">
+        <div class="profile-avatar">
+          <img src="Profile Picture.png" alt="Avatar" />
+        </div>
+        <h2 id="studentName"></h2>
+        <p id="studentGrade" class="profile-stars"></p>
+        <div class="profile-stats">
+          <div class="profile-stat">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShiK7gf9ocq3Li8WIWQJ6iETXZJqq_jJKS9Q&s"
+              alt="Coin"
+            />
+            <span id="studentCoin"></span>
+          </div>
+          <div class="profile-stat">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/459/459554.png"
+              alt="XP"
+            />
+            <span id="studentXP"></span>
+          </div>
+        </div>
+        <div class="profile-info">
+          <p id="studentTeacher"></p>
+          <p id="studentGroup"></p>
+        </div>
+        <button class="profile-btn" onclick="logout()">Log Out</button>
+        <button class="profile-btn delete" onclick="deleteFromLocalStorage()">
+          Delete from Local Storage
+        </button>
+      </div>
+    </div>
+
+    <script src="./second.js"></script>
+  </body>
+</html>
